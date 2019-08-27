@@ -1,9 +1,6 @@
-
 $(function(){
-    
     $('#js-shopping-list-form').submit(function(event){
         event.preventDefault();
-        
         const userInput = $(this).find('input')
         $('.shopping-list').append(`
         <li>
@@ -29,4 +26,4 @@ $('ul').on('click','.shopping-item-delete', function(event){
     const theDiv = $(this).closest('div');
     const theLi = theDiv.parent();
     theLi.remove();
-})
+});
